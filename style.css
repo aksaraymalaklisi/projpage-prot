@@ -150,11 +150,12 @@ main{
 }
 .main-body{
     display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: auto; /* Houve uma mudança no paradigma do site.*/
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     background-size: contain;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .main-section1{
@@ -163,23 +164,21 @@ main{
 }
 
 .main-image{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     align-items: center;
     gap: 20px;
 }
 
 .main-image img{
-    width: 400px;
-    height: 300px;
-    display: flex;
-    grid-auto-columns: auto;
-    transition: width 0.9s ease, height 0.9s ease, opacity 1s;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    transition: opacity 1s;
     cursor: pointer;
 }
 
 .main-image img:hover{
-    width: 500px;
-    height: 400px;
     opacity: 0.8;
 }
 
