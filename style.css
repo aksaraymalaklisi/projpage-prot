@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+}
+
+.comic-neue-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+  }
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    position: sticky;
+    top: 0;
+}
+
+footer{
+    padding: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.navmain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.navmain-main{
+    display: flex;
+}
+
+.navmain-main li{
+    margin: 10px;
+    align-self: center;
+    text-align: center;
+}
+
+.navlogo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navlogo a img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100px;
+}
+
+#logo{
+    width: 48px;
+    image-rendering: pixelated;
+    transition: all 1s;
+}
+
+#logo:hover{
+    transform: scale(1.2);
+}
+
+.button{
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.button:hover{
+    border-bottom-color: black;
+    cursor: pointer;
+}
+
+.footer-end{
+    margin: auto 10px;
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-end-section1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.footer-end-section2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-end-section3{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-end-section4{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.social-main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-main li{
+    margin: 10px;
+}
+
+hr{
+    margin: auto 20px 5px;
+    margin-top: 5px;
+}
+
+.main-body{
+    display: grid;
+	grid-template-columns: 2fr 1fr;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    background-size: contain;
+    padding: 20px;
+}
+
+.main-section1{
+    display: grid;
+    align-content: start;
+}
+
+.main-image{
+    display: grid;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-image img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+main{
+    padding: 20px;
+    background-image: url("imgs/background-image-test.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-start{
+    margin: auto 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.form-container{
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    margin: 0 auto;
+    width: 500px;
+    padding: 25px;
+}
+
+.form-container > h2 {
+    padding: 0px 0px 20px 0px;
+}
+
+form{
+    text-align: start;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    margin: 10px auto;
+  }
+
+.submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-submit{
+    padding: 10px 20px;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    background-color: rgb(113, 204, 90);
+    margin-top: 10px;
+
+}
+
+.button-submit:hover{
+    background-color: rgb(123, 221, 98);
+    border: 1px solid #ececec;
+    cursor:pointer
+}
+
+.sidebar {
+    /* "The Set Up" - Isso é necessário para fixar a sidebar no canto da tela. */
+    position: fixed;
+    width: 0px;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+
+    /* Algumas configuraçõs do navmain;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* Extra */
+    transition: 0.5s;
+}
+
+.sidebar-main li{
+    margin: 20px;
+    align-self: center;
+    text-align: center;
+}
+
+header, main, footer {
+    margin-right: 0px;
+    transition: 0.5s;
+}
+
+.extra-section{
+    display: flex;
+    justify-content: center;
+}
+
+.accordion-main {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    width: 40%;
+}
+
+.accordion-main > h1 {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.accordion {
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-size: large;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    text-align: start;
+    cursor: pointer;  
+    margin-top: 20px;
+}
+
+.accordion:after {
+    content: '+';
+    font-size: x-large;
+    color: #000000;
+    float: right;
+}
+
+.active:after {
+    content: '-'
+  }
+
+.accordiontext{
+    display: none;
+    padding: 20px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+}
+
+#borger {
+    font-size: 48px;
+}
+

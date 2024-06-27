@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Trabalho</title>
+</head>
+<body class="comic-neue-regular">
+
+    <div class="sidebar" id="odio">
+        <ul class="sidebar-main">
+            <li class="button"><a href="#home">Início</a></li>
+            <li class="button"><a href="#aboutus">Sobre o projeto</a></li>
+            <li class="button"><a href="#contact">Contato</a></li>
+            <li class="button"><a href="#info">Informações</a></li>
+        </ul>
+    </div>
+
+    <header id="home">
+        <nav class="navbar">
+            <div class="navlogo">
+                <a href=""><img src="imgs/logotemp.jpg" alt=""></a>
+            </div>
+            <div class="navmain">
+                <ul class="navmain-main">
+                    <li class="button"><a href="#home">Início</a></li>
+                    <li class="button"><a href="#aboutus">Sobre o projeto</a></li>
+                    <li class="button"><a href="#contact">Contato</a></li>
+                    <li class="button"><a href="#info">Informações</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <ul class="social-main">
+                    <li><a id="borger" onclick="navToggle()"class="button">☰</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="aboutus">
+        <div class="main-body">
+            <div class="main-section1" >
+                <h1>Nossa Missão</h1>
+                <p>Nosso objetivo não é apenas fazer com que as pessoas se tornem mais apegadas à natureza</p>
+                <p>e os seres que vivem lá por meio do Ecoturismo, como também ajudá-las a descobrir a geografia</p>
+                <p>e a cultura da cidade em que estão com o nosso app.</p>
+                <br>
+                <h1>Nossa Visão</h1>
+                <p>A nossa visão é criar um novo costume no local onde estamos atuando, e nos desenvolver</p>
+                <p>a ponto de nos tornar em referência de confiabilidade, qualidade e excelência no cenário</p>
+                <p>do Ecoturismo.</p>
+               <br>
+                <h1>Nosso Impacto</h1>
+                <p>Desejamos impactar não apenas no cenário socioeconômico de nossa cidade, como também</p>
+                <p>queremos fazer a diferença no cenário ambiental, conscientizando as pessoas que estão</p>
+                <p>em Maricá em como nossas ações impactam nas belezas naturais que existem em nosso município.</p>
+                <p>Apresentando a todos como nossa cidade tem uma natureza incrível por meio do ecoturismo,</p>
+                <p>poderemos ajuda-la tanto economicamente com o potencial de turismo que tem, tanto socialmente</p>
+                <p>com o potêncial de interação que nosso app terá, como também ambientalmente pelos motivos</p>
+                <p>anteriormente citados.</p>
+            </div>
+            <div class="main-image">
+                <img src="imgs/tempimage.webp" alt="">
+            </div>
+        </div>
+        <div class="extra-section">
+            <div class="accordion-main">
+                <h1>Sobre o projeto</h1>
+                <button class="accordion">Informações gerais</button>
+                <div class="accordiontext">
+                    <p>Coloquem o texto aqui, por favor. - Mensagem temporária</p>
+                    <p>Coloquem o texto aqui, por favor. - Mensagem temporária</p>
+                    <p>Coloquem o texto aqui, por favor. - Mensagem temporária</p>
+                </div>
+
+                <button class="accordion">Detalhes do projeto</button>
+                <div class="accordiontext">
+                    <p>Coloquem o texto aqui, por favor. - Mensagem temporária</p>
+                </div>
+
+                <button class="accordion">Equipe</button>
+                <div class="accordiontext">
+                    <p>Rafael Dias</p>
+                    <p>Deyvison Fonseca - </p>
+                    <p>Jefferson Rosa</p>
+                    <p>Pedro Timon</p>
+                    <p>Vitor Amparo </p>
+                    <p>Adicione mais informações acima.</p>
+                    <p>Use tamanhos diferentes se precisar (h1, h2, h3, h4, h5, h6). - Mensagem temporária</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    <div class="footer-main">
+        <div class="footer-start">
+            <div class="form-container">
+                <h2>Entre em contato conosco!</h2>
+                <form class="contact">
+                      <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" />
+                      </div>
+                      <div>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" />
+                      </div>
+                      <div>
+                        <label for="number">Telefone: </label>
+                        <input type="number" id="number" />
+                      </div>
+                      <div>
+                        <label for="msg">Mensagem:</label>
+                        <textarea id="msg"></textarea>
+                      </div>
+                  <div class="submit">
+                    <button type="submit" class="button-submit">Enviar</button>
+                  </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-end" id="info">
+            <div class="footer-end-section1">
+                <div class="footer-end-extra-section1">
+                    <img id="logo" src="/imgs/dinosaur.png" alt="">
+                </div>
+                <div class="footer-end-content-section1">
+                    <h5>Green City</h5>
+                    <h6>Um projeto em andamento.</h6>
+                </div>
+            </div>
+            <div class="footer-end-section2">
+                <div class="footer-end-content-section2">
+                    <h5>Contato</h5>
+                    <h6>E-mail: example@example.com</h6>
+                    <h6>Número de telefone: (21) 91234-5678</h6>
+                    <h6>Rua Casa da Mãe Joana, Mumbuca - Maricá, RJ</h6>
+                </div>
+            </div>
+            <div class="footer-end-section4">
+                <div class="footer-end-content-section4">
+                    <div class="social">
+                        <ul class="social-main">
+                            <li><a href="" class="button"><img src="imgs/icons8-instagram.svg" alt="Instagram"></a></li>
+                            <li><a href="" class="button"><img src="imgs/icons8-twitter.svg" alt="Twitter"></a></li>
+                            <li><a href="" class="button"><img src="imgs/icons8-facebook.svg" alt="Facebook"></a></li> 
+                            <li><a href="" class="button"><img src="imgs/icons8-whatsapp.svg" alt="WhatsApp"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
