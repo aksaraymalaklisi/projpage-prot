@@ -141,6 +141,13 @@ hr{
     margin-top: 5px;
 }
 
+main{
+    padding: 20px;
+    background-image: url("imgs/background-image-test.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .main-body{
     display: grid;
 	grid-template-columns: 2fr 1fr;
