@@ -44,7 +44,22 @@
 
     <main id="aboutus">
         <div class="main-body">
-            <div class="main-section1" >
+            <div class="main-image">
+                <img id="img1" class= "img" onclick="openLightbox('imgs/tempimage.webp')" src="imgs/tempimage.webp" alt="">
+                <img id="img2" class= "img" onclick="openLightbox('imgs/background-image-test.jpg')" src="imgs/background-image-test.jpg" alt="">
+                <img id="img3" class= "img" onclick="openLightbox('imgs/cachoeira.webp')" src="imgs/cachoeira.webp" alt="">
+                <img id="img4" class= "img" onclick="openLightbox('imgs/ilha.avif')" src="imgs/ilha.avif" alt="">
+            </div>
+            <div id="lightbox" class="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <img id="lightbox-img" class="lightbox-content" src="" alt="">
+            </div>
+        </div>
+    </main>
+
+    <section id="aboutus2">
+        <div class="sub-body">
+            <div class="sub-text" >
                 <h1>Nossa Missão</h1>
                 <p>Nosso objetivo não é apenas fazer com que as pessoas se tornem mais apegadas à natureza</p>
                 <p>e os seres que vivem lá por meio do Ecoturismo, como também ajudá-las a descobrir a geografia</p>
@@ -64,10 +79,8 @@
                 <p>com o potêncial de interação que nosso app terá, como também ambientalmente pelos motivos</p>
                 <p>anteriormente citados.</p>
             </div>
-            <div class="main-image">
-                <img src="imgs/tempimage.webp" alt="">
             </div>
-        </div>
+        </section>
         <div class="extra-section">
             <div class="accordion-main">
                 <h1>Sobre o projeto</h1>

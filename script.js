@@ -2,6 +2,17 @@
 
 const webMain = document.querySelectorAll('header, main, footer')
 const sideMain = document.getElementById("odio")
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+function openLightbox(src) {
+    lightboxImg.src = src;
+    lightbox.style.display = 'block';
+}
+
+function closeLightbox() {
+    lightbox.style.display = 'none';
+}
 
 function navToggle() { // Queria entender if e else no JS. 
                                    //Isso provavelmente seria muito mais fácil ao trocar para uma pseudoclasse que poderia alternar os valores de um para outro.
