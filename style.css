@@ -350,6 +350,7 @@ header, main, footer {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
+    max-width: 600px;
 }
 
 .accordion-main > h1 {
