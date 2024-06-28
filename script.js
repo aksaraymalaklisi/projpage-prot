@@ -43,8 +43,6 @@ function navEscape() {
 
 const acorde = document.getElementsByClassName("accordion") // Ele não puxa um nodelist igual o querySelectorAll.
 
-console.log(acorde) // Não é um nodelist mesmo.
-
 Array.from(acorde).forEach(element => { // ??? Eu não sei como Array.from() funciona. Nodelist funciona, mas HTMLCollection  não deixa eu usar o array.
     element.addEventListener("click", function() { // Início da função. Cada elemento (botão) da array terá essa função atrelada a ele.
         element.classList.toggle('active');
