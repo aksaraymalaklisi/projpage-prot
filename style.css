@@ -305,7 +305,7 @@ input, textarea {
     height: 100%;
     z-index: 2;
     top: 0;
-    right: 0;
+    left: 0;
     background-color: white;
     overflow-x: hidden;
 

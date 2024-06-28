@@ -17,10 +17,10 @@ function closeLightbox() {
 function navToggle() { // Queria entender if e else no JS. 
                                    //Isso provavelmente seria muito mais fácil ao trocar para uma pseudoclasse que poderia alternar os valores de um para outro.
     webMain.forEach(element => {
-        if (element.style.marginRight === "250px") { // Se o elemento da lista (header, main e footer) tiver 250px de margem na direita
-            element.style.marginRight = '0'; // então defina a sua margem para 0.
+        if (element.style.marginLeft === "250px") { // Se o elemento da lista (header, main e footer) tiver 250px de margem na direita
+            element.style.marginLeft = '0'; // então defina a sua margem para 0.
         } else { // Caso contrário
-            element.style.marginRight = '250px'; // defina para 200px.
+            element.style.marginLeft = '250px'; // defina para 200px.
         }
     });
     if (sideMain.style.width === "250px") { // Se o elemento (sidebar, com id = "odio") tiver 250px de largura (width)
@@ -32,8 +32,8 @@ function navToggle() { // Queria entender if e else no JS.
 
 function navEscape() {
     webMain.forEach(element => {
-        if (element.style.marginRight === "250px") { // Se o elemento da lista (header, main e footer) tiver 250px de margem na direita
-            element.style.marginRight = '0'; // então defina a sua margem para 0.
+        if (element.style.marginLeft === "250px") { // Se o elemento da lista (header, main e footer) tiver 250px de margem na direita
+            element.style.marginLeft = '0'; // então defina a sua margem para 0.
             sideMain.style.width = '0'; // então defina a sua largura para 0.
         }
     });
