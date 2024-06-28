@@ -204,8 +204,8 @@ main{
     padding-top: 60px;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Lightbox aparenta ser responsiva */
+    height: 100%; 
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.9);
 }
@@ -213,8 +213,11 @@ main{
 .lightbox-content{
     margin: auto;
     display: block;
-    width: 1200px;
-    max-height: 900px;
+    /* width: 1200px; */ /* Exceto o conteúdo da lightbox?*/
+    /* max-height: 900px; */
+    width: 100%;
+    height: 100%; 
+    object-fit: scale-down; /* Confio a minha vida ao object-fit, pois este nunca me deixou na mão. */
 }
 
 .close-btn{
