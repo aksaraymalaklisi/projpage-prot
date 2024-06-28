@@ -1,0 +1,68 @@
+/* Responsividade */
+
+/* Celular - pequeno: até 360px de largura */
+@media only screen and (max-width: 360px) {
+    .navmain-main {
+        display: none;
+    }
+    .navbar {
+        grid-template-columns: 1fr 1fr;
+    }
+    .main-section {
+        grid-template-columns: 1fr;
+    }
+    .main-image {
+        grid-template-columns: 1fr;
+    }
+}
+  
+/* Celular - médio: 361px a 480px de largura */
+@media only screen and (min-width: 361px) and (max-width: 480px) {
+    .navmain-main {
+        display: none;
+    }
+    .navbar {
+        grid-template-columns: 1fr 1fr;
+    }
+    .main-section {
+        grid-template-columns: 1fr;
+    }
+    .main-image {
+        grid-template-columns: 1fr;
+    }
+}
+  
+  /* Celular - grande: 481px a 768px de largura */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .navmain-main{
+        display: none;
+    }
+}
+  
+  /* Tablet - retrato: 769px a 1024px de largura */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .navmain-main{
+        display: none;
+    }
+}
+  
+  /* Tablet - paisagem: 1025px a 1280px de largura */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    #borger {
+        display: none;
+    }
+}
+  
+/* Desktop - comum: 1281px a 1440px de largura */
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+    #borger {
+        display: none;
+    }
+}
+  
+/* Desktop - grande: acima de 1441px de largura */
+@media only screen and (min-width: 1441px) {
+    #borger {
+        display: none;
+    }
+}
