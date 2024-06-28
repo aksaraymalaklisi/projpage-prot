@@ -18,6 +18,10 @@ body{
     display: grid;
 }
 
+html,body{
+    overflow-x: hidden;
+}
+
 header{
     background-color: white;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
@@ -139,6 +143,7 @@ footer{
 .social-main{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -332,6 +337,7 @@ input, textarea {
 
 #borger {
     font-size: 48px;
+    text-align: center;
     cursor: pointer;
 }
 
