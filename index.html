@@ -15,8 +15,8 @@
     <div class="sidebar" id="odio">
         <ul class="sidebar-main">
             <li class="button"><a href="#aboutus">Sobre o Projeto</a></li>
-            <li class="button"><a href="#contact">Contato</a></li>
             <li class="button"><a href="#info">Informações</a></li>
+            <li class="button"><a href="#contact">Contato</a></li>
         </ul>
     </div>
 
@@ -28,21 +28,22 @@
             <div class="mainbar">
                     <div class="social">
                         <ul class="social-main">
-                            <li><a id="borger" onclick="navToggle()"class="button">☰</a></li>
+                            <li><a id="borger" onclick="navToggle()">☰</a></li>
                         </ul>
                     </div>
                     <div class="navmain">
                         <ul class="navmain-main">
                             <li class="button"><a href="#aboutus">Sobre o Projeto</a></li>
-                            <li class="button"><a href="#contact">Contato</a></li>
                             <li class="button"><a href="#info">Informações</a></li>
+                            <li class="button"><a href="#contact">Contato</a></li>
+
                         </ul>
                     </div>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main onclick="navEscape()">
         <div class="main-body">
             <div class="main-image">
                 <img onclick="openLightbox('imgs/tempimage.webp')" src="imgs/tempimage.webp" alt="">
@@ -87,7 +88,7 @@
                 </div>
             </div>
         </section>
-            <section class="extra-section">
+            <section id="info" class="extra-section">
                 <div class="accordion-main">
                     <h1>Sobre o projeto</h1>
                     <button class="accordion">Informações Gerais</button>
@@ -113,9 +114,9 @@
             </section>
     </main>
 
-    <footer>
+    <footer onclick="navEscape()">
     <div class="footer-main">
-        <div class="footer-start">
+        <div class="footer-start" id="contact">
             <div class="form-container">
                 <h2>Entre em contato conosco!</h2>
                 <form class="contact">
@@ -164,10 +165,10 @@
                 <div class="footer-end-content-section4">
                     <div class="social">
                         <ul class="social-main">
-                            <li><a href="" class="button"><img src="imgs/icons8-instagram.svg" alt="Instagram"></a></li>
-                            <li><a href="" class="button"><img src="imgs/icons8-twitter.svg" alt="Twitter"></a></li>
-                            <li><a href="" class="button"><img src="imgs/icons8-facebook.svg" alt="Facebook"></a></li> 
-                            <li><a href="" class="button"><img src="imgs/icons8-whatsapp.svg" alt="WhatsApp"></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank" class="button"><img src="imgs/icons8-instagram.svg" alt="Instagram"></a></li>
+                            <li><a href="https://twitter.com/" target="_blank" class="button"><img src="imgs/icons8-twitter.svg" alt="Twitter"></a></li>
+                            <li><a href="https://www.facebook.com/" target="_blank" class="button"><img src="imgs/icons8-facebook.svg" alt="Facebook"></a></li> 
+                            <li><a href="https://www.whatsapp.com/" target="_blank" class="button"><img src="imgs/icons8-whatsapp.svg" alt="WhatsApp"></a></li>
                         </ul>
                     </div>
                 </div>
