@@ -298,8 +298,8 @@ input, textarea {
     cursor:pointer
 }
 
-.sidebar-temp {
-    /* "The Set Up" - Isso é necessário para fixar a sidebar no canto da tela. */
+.sidebar{
+    /* Isso é necessário para fixar a sidebar no canto da tela. */
     position: fixed;
     width: 0px;
     height: 100%;
@@ -319,7 +319,7 @@ input, textarea {
     transition: 0.5s;
 }
 
-.sidebar-main-temp li{
+.sidebar-main li{
     margin: 20px;
     align-self: center;
     text-align: center;
