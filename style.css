@@ -391,9 +391,6 @@ header, main, footer {
     .main-image {
         grid-template-columns: 1fr;
     }
-    .form-container {
-        width: 100%;
-    }
 }
   
 /* Celular - médio: 361px a 480px de largura */
@@ -409,9 +406,6 @@ header, main, footer {
     }
     .main-image {
         grid-template-columns: 1fr;
-    }
-    .form-container {
-        width: 100%;
     }
 }
   
