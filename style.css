@@ -417,9 +417,9 @@ header, main, footer {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.205);
     z-index: 1000;
     max-width: 300px;
-  }
+}
   
-  #cookiespopup button {
+#cookiespopup button {
     background-color: #4CAF50;
     color: white;
     border: 1px solid rgba(0, 0, 0, 0.062);
@@ -430,8 +430,8 @@ header, main, footer {
     cursor: pointer;
     border-radius: 8px;
     transition: background-color 0.5s ease;
-  }
+}
   
-  #cookiespopup button:hover {
+#cookiespopup button:hover {
     background-color: #45a049;
-  }
+}
