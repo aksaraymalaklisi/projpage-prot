@@ -4,6 +4,9 @@ const webMain = document.querySelectorAll('header, main, footer')
 const sideMain = document.getElementById("odio")
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
+const cookiespopup = document.getElementById('cookiespopup');
+const accept = document.getElementById('acceptCookies');
+const reject = document.getElementById('rejectCookies');
 
 function openLightbox(src) {
     lightboxImg.src = src;
@@ -54,3 +57,30 @@ Array.from(acorde).forEach(element => { // ??? Eu não sei como Array.from() fun
         }
     }); // Fim da função do elemento da array.
 });
+
+// Pop-up
+
+function showPopup() {
+    const escolha = localStorage.getItem('escolha');
+    if (!escolha) {
+        cookiespopup.style.display = "flex";
+    } else {
+        cookiespopup.style.display = "none";
+    }
+}
+
+function acceptCookies() {
+    localStorage.setItem('escolha', 'aceito');
+    cookiespopup.style.display = "none";
+}
+
+function rejectCookies() {
+    localStorage.setItem('escolha', 'rejeitado');
+    cookiespopup.style.display = "none";
+}
+
+accept.addEventListener("click", acceptCookies);
+
+reject.addEventListener("click", rejectCookies);
+
+showPopup();

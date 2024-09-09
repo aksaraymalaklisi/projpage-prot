@@ -1,0 +1,62 @@
+.comic-neue-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    height: 100vh;
+}
+  
+.login-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+  
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.login-form h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    text-align: center;
+}
+  
+.login-form label {
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+  
+.login-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+  
+.login-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: medium;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+  
+.login-form button:hover {
+    background-color: #45a049;
+}
