@@ -1,0 +1,41 @@
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(113, 204, 90);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: green;
+}
+
+.maindiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.logindiv {
+    width: 350px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.055);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
