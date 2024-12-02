@@ -54,3 +54,97 @@ Array.from(acorde).forEach(element => { // ??? Eu não sei como Array.from() fun
         }
     }); // Fim da função do elemento da array.
 });
+
+// Testando...
+
+function loadGPX(file) {
+    return new Promise((resolve, reject) => {
+        const gpxLayer = new L.GPX(file, {
+            async: true,
+            marker_options: {
+                shadowUrl: null 
+            }
+        }).on('addline', function(event) {
+            const latLngs = event.line.getLatLngs();
+            gpxLayer.line = event.line;
+            resolve(gpxLayer);
+        }).on('error', function(e) {
+            reject(`Error loading file: ${file}`);
+        }).addTo(map);
+    });
+}
+
+const map = L.map('map').setView([-22.973390, -43.02463], 11);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+}).addTo(map);
+
+let count = 1;
+const gpxArray = [];
+
+async function loadPath() {
+    const file = `markers/file${count}.gpx`;
+    console.log(`Trying to load: ${file}`);
+
+    try {
+        const gpxLayer = await loadGPX(file);
+        console.log(`Successfully loaded file ${count}.gpx`);
+        gpxArray.push(gpxLayer);
+
+        const latLngs = gpxLayer.line.getLatLngs();
+
+        if (latLngs.length > 0) {
+            const startLatLng = latLngs[0];
+            const marker = L.marker(startLatLng).addTo(map);
+
+            marker.on('click', () => {
+                if (gpxLayer.line) {
+                    if (map.hasLayer(gpxLayer.line)) {
+                        map.removeLayer(gpxLayer.line);
+                    } else {
+                        map.addLayer(gpxLayer.line);
+                    }
+                }
+            });
+        }
+
+        count++;
+        loadPath(); 
+    } catch (error) {
+        console.log(error);
+        console.log('Finished loading.');
+    }
+}
+
+loadPath();
+
+const apiKey = "320f1bd9cbfa69270e808018b406ab52"; // Substitua pela sua chave de API
+const city = "Maricá,BR";
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`;
+
+async function fetchWeather() {
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        if (response.ok) {
+            const { main, weather, wind } = data;
+            const weatherContainer = document.getElementById('weather');
+
+            weatherContainer.innerHTML = `
+                <p><strong>Temperatura:</strong> ${main.temp} °C</p>
+                <p><strong>Condição:</strong> ${weather[0].description}</p>
+                <p><strong>Umidade:</strong> ${main.humidity}%</p>
+                <p><strong>Vento:</strong> ${wind.speed} m/s</p>
+            `;
+        } else {
+            throw new Error(data.message);
+        }
+    } catch (error) {
+        document.getElementById('weather').textContent = "Erro ao obter dados do clima.";
+        console.error(error);
+    }
+}
+
+fetchWeather()
